@@ -2,8 +2,9 @@ function(itemText, ellipsis) {
   const client = require('google-client')(ellipsis);
 const {google} = require('googleapis');
 const sheets = google.sheets('v4');
+const moment = require('moment-timezone');
 
-const timestamp = (new Date()).toString();
+const timestamp = moment.tz(ellipsis.teamInfo.timeZone).format('YYYY-MM-DD hh:mm:ss a');
 const slackHandle = ellipsis.userInfo.messageInfo.details.profile.displayName;
 const values = [
   [timestamp, slackHandle, itemText]

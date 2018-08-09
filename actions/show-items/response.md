@@ -1,5 +1,5 @@
-**Items for today's briefing:**
+Items for today's briefing:
 
 {for item in successResult}
-- {item.text} ({item.user} @ {item.timestamp})
+1. **{item.text}** ({item.user} @ {item.timestamp})
 {endfor}
