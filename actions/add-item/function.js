@@ -11,7 +11,7 @@ const values = [
 client.authorize().then(() => {
   const request = {
     spreadsheetId: ellipsis.env.CEO_BRIEFING_SHEET_ID,
-    range: 'Form Responses 1',
+    range: ellipsis.env.CEO_BRIEFING_SHEET_NAME,
     valueInputOption: 'USER_ENTERED',
     resource: {
       values: values

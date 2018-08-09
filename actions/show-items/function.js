@@ -6,7 +6,7 @@ const sheets = google.sheets('v4');
 client.authorize().then(() => {
   const request = {
     spreadsheetId: ellipsis.env.CEO_BRIEFING_SHEET_ID,
-    ranges: ['Form Responses 1'],
+    ranges: [ellipsis.env.CEO_BRIEFING_SHEET_NAME],
     auth: client,
   };
   sheets.spreadsheets.values.batchGet(request).then(res => {
