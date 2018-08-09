@@ -6,8 +6,9 @@ const moment = require('moment-timezone');
 
 const timestamp = moment.tz(ellipsis.teamInfo.timeZone).format('YYYY-MM-DD hh:mm:ss a');
 const slackHandle = ellipsis.userInfo.messageInfo.details.profile.displayName;
+const slackUserId = ellipsis.userInfo.messageInfo.userId;
 const values = [
-  [timestamp, slackHandle, itemText]
+  [timestamp, slackHandle, slackUserId, itemText]
 ];
 client.authorize().then(() => {
   const request = {
