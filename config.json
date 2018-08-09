@@ -1,0 +1,8 @@
+{
+  "name" : "CEO Briefing",
+  "exportId" : "rHZDQVrdSUyJ1fQbcI5HjA",
+  "icon" : "💼",
+  "requiredAWSConfigs" : [ ],
+  "requiredOAuth2ApiConfigs" : [ ],
+  "requiredSimpleTokenApis" : [ ]
+}
