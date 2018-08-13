@@ -3,4 +3,14 @@
   "requiresMention" : true,
   "isRegex" : false,
   "caseSensitive" : false
+}, {
+  "text" : "add to brief",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "brief add",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
 } ]

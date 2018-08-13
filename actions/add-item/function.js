@@ -10,6 +10,8 @@ const slackUserId = ellipsis.userInfo.messageInfo.userId;
 const values = [
   [timestamp, slackHandle, slackUserId, itemText]
 ];
+const sheetUrl = `https://docs.google.com/spreadsheets/d/${ellipsis.env.CEO_BRIEFING_SHEET_ID}/edit#gid=0`;
+
 client.authorize().then(() => {
   const request = {
     spreadsheetId: ellipsis.env.CEO_BRIEFING_SHEET_ID,
@@ -25,7 +27,10 @@ client.authorize().then(() => {
     if (updated == 0) {
       ellipsis.error("Hmmm… I couldn't add your item for some reason.");
     } else {
-      ellipsis.success(itemText);
+      ellipsis.success({
+        itemText: itemText,
+        sheetUrl: sheetUrl
+      });
     }
   });        
 });
