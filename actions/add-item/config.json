@@ -1,7 +1,7 @@
 {
   "exportId" : "XoLULCnGTqKMG4Nq_fcAgw",
   "name" : "add-item",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : false,
   "isTest" : false

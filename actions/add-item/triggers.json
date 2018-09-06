@@ -1,15 +1,10 @@
 [ {
-  "text" : "add briefing item",
+  "text" : "add brief {itemText}",
   "requiresMention" : true,
   "isRegex" : false,
   "caseSensitive" : false
 }, {
-  "text" : "add to brief",
-  "requiresMention" : true,
-  "isRegex" : false,
-  "caseSensitive" : false
-}, {
-  "text" : "brief add",
+  "text" : "brief add {itemText}",
   "requiresMention" : true,
   "isRegex" : false,
   "caseSensitive" : false
