@@ -9,6 +9,26 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "HIMyWjOMT_W9UR1CFrfNKA",
+  "name" : "trelloList",
+  "paramType" : {
+    "exportId" : "glzDb_n5T267NZBpA_8jGw",
+    "name" : "TrelloList"
+  },
+  "question" : "What is the value for `trelloList`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "J9bHqwQoRHWwn6_xESm4fw",
+  "name" : "itemsJson",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `itemsJson`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "TE4LXTFeSAW-vXUYhkMhUw",
   "name" : "trelloList",
   "paramType" : {

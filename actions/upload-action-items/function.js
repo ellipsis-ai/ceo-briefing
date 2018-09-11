@@ -1,24 +1,22 @@
-function(trelloList, ellipsis) {
+function(itemsJson, trelloList, ellipsis) {
   const actionItems = require('action-items')(ellipsis);
 const trello = require('trello')(ellipsis);
 const client = require('google-client')(ellipsis);
 const {google} = require('googleapis');
 const sheets = google.sheets('v4');
 
+const items = JSON.parse(itemsJson);
 const sheetUrl = `https://docs.google.com/spreadsheets/d/${ellipsis.env.CEO_BRIEFING_SHEET_ID}/edit#gid=0`;
 
-actionItems.fetch().then(items => {
-  const toUpload = items.filter(ea => !ea.trelloLink);
-  Promise.all(toUpload.map(ea => {
-    return createCardFor(ea);
-  })).then(res => {
-    ellipsis.success({
-      didCreate: toUpload.length > 0,
-      created: res,
-      sheetUrl: sheetUrl
-    });
-  });  
-});
+Promise.all(items.map(ea => {
+  return createCardFor(ea);
+})).then(res => {
+  ellipsis.success({
+    didCreate: items.length > 0,
+    created: res,
+    sheetUrl: sheetUrl
+  });
+}); 
 
 function createCardFor(actionItem) {
   return trello.createCard(actionItem.item, null, trelloList.id).then(cardRes => {
