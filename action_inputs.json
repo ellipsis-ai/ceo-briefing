@@ -1,11 +1,11 @@
 [ {
-  "exportId" : "4vRZzmKtTz2cXvzrh9cWPg",
-  "name" : "sheetId",
+  "exportId" : "3rT3oiozTya6-mCRS80wfw",
+  "name" : "name",
   "paramType" : {
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What is the value for `sheetId`?",
+  "question" : "What is the value for `name`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -17,5 +17,35 @@
   },
   "question" : "What item do you want to add?",
   "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "HIMyWjOMT_W9UR1CFrfNKA",
+  "name" : "trelloList",
+  "paramType" : {
+    "exportId" : "glzDb_n5T267NZBpA_8jGw",
+    "name" : "TrelloList"
+  },
+  "question" : "What is the value for `trelloList`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "J9bHqwQoRHWwn6_xESm4fw",
+  "name" : "itemsJson",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `itemsJson`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "TE4LXTFeSAW-vXUYhkMhUw",
+  "name" : "trelloList",
+  "paramType" : {
+    "exportId" : "glzDb_n5T267NZBpA_8jGw",
+    "name" : "TrelloList"
+  },
+  "question" : "Which Trello list do you want to use?",
+  "isSavedForTeam" : true,
   "isSavedForUser" : false
 } ]

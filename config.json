@@ -1,8 +1,13 @@
 {
   "name" : "CEO Briefing",
-  "exportId" : "QUCG0_HOQOaWkylTG4Hi4A",
+  "exportId" : "rHZDQVrdSUyJ1fQbcI5HjA",
   "icon" : "💼",
   "requiredAWSConfigs" : [ ],
-  "requiredOAuth2ApiConfigs" : [ ],
+  "requiredOAuthApiConfigs" : [ {
+    "exportId" : "3keYf22gQeyM5x9smwKGrg",
+    "apiId" : "7gK5ysNxSjSa9BzfB44yAg",
+    "recommendedScope" : "read,write",
+    "nameInCode" : "trello"
+  } ],
   "requiredSimpleTokenApis" : [ ]
 }
