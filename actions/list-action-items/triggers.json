@@ -1,5 +1,5 @@
 [ {
-  "text" : "brief action items",
+  "text" : "brief all action items",
   "requiresMention" : true,
   "isRegex" : false,
   "caseSensitive" : false

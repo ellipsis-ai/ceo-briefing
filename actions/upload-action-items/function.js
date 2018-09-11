@@ -19,7 +19,7 @@ Promise.all(items.map(ea => {
 }); 
 
 function createCardFor(actionItem) {
-  return trello.createCard(actionItem.item, null, trelloList.id).then(cardRes => {
+  return trello.createCard(actionItem.item, null, trelloList.id, actionItem.userName).then(cardRes => {
     return setCardUrlFor(cardRes.shortUrl, actionItem.rowIndex).then(urlRes => {
       return {
         item: actionItem.item,
