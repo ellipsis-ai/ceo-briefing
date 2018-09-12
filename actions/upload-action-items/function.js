@@ -19,7 +19,10 @@ Promise.all(items.map(ea => {
 }); 
 
 function createCardFor(actionItem) {
-  return trello.createCard(actionItem.item, null, trelloList.id, actionItem.userName).then(cardRes => {
+  const textEntered = actionItem.initialText ? `Text entered: ${actionItem.initialText}\n` : '';
+  const notesFromMeeting = actionItem.notes ? `Notes from meeting: ${actionItem.notes}` : '';
+  const description = `${textEntered}${notesFromMeeting}`;
+  return trello.createCard(actionItem.item, description, trelloList.id, actionItem.userName).then(cardRes => {
     return setCardUrlFor(cardRes.shortUrl, actionItem.rowIndex).then(urlRes => {
       return {
         item: actionItem.item,
