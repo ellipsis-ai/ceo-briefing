@@ -1,0 +1,11 @@
+[ {
+  "text" : "add brief {itemText}",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "brief add {itemText}",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+} ]
